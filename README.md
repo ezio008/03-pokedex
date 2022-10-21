@@ -19,7 +19,7 @@ $ docker-compose up -d
 # ejecutar en modo desarrollo
 $ yarn start:dev
 ```
-3. Recargar la base de datos:
+3. Recargar la base de datos con la semilla:
 ```
 http://localhost:3000/api/v2/seed
 ```
