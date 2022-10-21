@@ -5,7 +5,9 @@
 # Ejecutar en desarrollo
 
 1. Clonar el repositorio
-2. Ejecturar los siguiente comandos:
+2. Clonar el archivo ```.env.template``` y renombrar la copia a ```.env```
+3. Rellenar las variables de entorno en el ```.env```
+4. Ejecturar los siguiente comandos:
 ```bash
 # instalar packages
 $ yarn install
@@ -19,7 +21,7 @@ $ docker-compose up -d
 # ejecutar en modo desarrollo
 $ yarn start:dev
 ```
-3. Recargar la base de datos con la semilla:
+5. Recargar la base de datos con la semilla:
 ```
 http://localhost:3000/api/v2/seed
 ```
