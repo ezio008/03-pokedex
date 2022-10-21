@@ -39,4 +39,3 @@ mongo/
 
 # Other
 .env
-yarn.lock
