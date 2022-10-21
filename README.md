@@ -6,7 +6,7 @@
 
 1. Clonar el repositorio
 2. Clonar el archivo ```.env.template``` y renombrar la copia a ```.env```
-3. Rellenar las variables de entorno en el ```.env```
+3. Rellenar las variables de entorno en el archivo ```.env```
 4. Ejecturar los siguiente comandos:
 ```bash
 # instalar packages
