@@ -39,3 +39,4 @@ mongo/
 
 # Other
 .env
+.env.prod
