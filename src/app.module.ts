@@ -8,10 +8,13 @@ import { SeedModule } from './seed/seed.module';
 import { ConfigModule } from '@nestjs/config';
 import { EnvConfiguration } from './config/app.config';
 import { JoiValidationSchema } from './config/joi.validation';
+import { AuthModule } from './auth/auth.module';
+import { MailerModule } from '@nestjs-modules/mailer';
 
 @Module({
   imports: [
     ConfigModule.forRoot({
+      isGlobal: true,
       load: [EnvConfiguration],
       validationSchema: JoiValidationSchema,
     }),
@@ -21,6 +24,10 @@ import { JoiValidationSchema } from './config/joi.validation';
     }),
 
     MongooseModule.forRoot(process.env.MONGODB),
+
+    AuthModule,
+
+    MailerModule,
 
     PokemonModule,
 
